@@ -1,1 +1,4 @@
 res://scenes/cena1.tscn
+res://scenes/teste_level.tscn
+res://scenes/scene1.tscn
+res://scripts/teste_level.gd
