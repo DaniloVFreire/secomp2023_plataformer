@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://b35gi3bd3hgxn"]
+
+[ext_resource type="Texture2D" uid="uid://d32g6hojvjb83" path="res://assets/pixel_adventure_1/Traps/Blocks/Idle.png" id="1_6i3ml"]
+[ext_resource type="Texture2D" uid="uid://4uveoha5q0om" path="res://assets/pixel_adventure_1/Traps/Blocks/HitTop (22x22).png" id="2_1mtq2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rcbtc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bii65"]
+atlas = ExtResource("2_1mtq2")
+region = Rect2(0, 0, 22, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwfyc"]
+atlas = ExtResource("2_1mtq2")
+region = Rect2(22, 0, 22, 22)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gn8sk"]
+atlas = ExtResource("2_1mtq2")
+region = Rect2(44, 0, 22, 22)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sjiaf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6i3ml")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bii65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwfyc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gn8sk")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 2.0
+}]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_rcbtc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CollisionShape2D"]
+sprite_frames = SubResource("SpriteFrames_sjiaf")
+animation = &"new_animation"
+frame_progress = 0.954615

@@ -1,7 +1,8 @@
-[gd_scene load_steps=31 format=3 uid="uid://cncwushy5j8l6"]
+[gd_scene load_steps=32 format=3 uid="uid://cncwushy5j8l6"]
 
 [ext_resource type="Script" path="res://scripts/player/player_controller.gd" id="1_ukqpb"]
 [ext_resource type="Texture2D" uid="uid://gxedki22qfvm" path="res://assets/pixel_adventure_1/Main Characters/Virtual Guy/Idle (32x32).png" id="2_0vjar"]
+[ext_resource type="Resource" uid="uid://cc5tyds6rp3pd" path="res://resorces/player_movement_data.tres" id="2_rh8xn"]
 [ext_resource type="Texture2D" uid="uid://cvd0a5wajexhu" path="res://assets/pixel_adventure_1/Main Characters/Virtual Guy/Jump (32x32).png" id="3_tno7m"]
 [ext_resource type="Texture2D" uid="uid://bn2e76oibrvyk" path="res://assets/pixel_adventure_1/Main Characters/Virtual Guy/Run (32x32).png" id="4_0v6im"]
 
@@ -191,24 +192,33 @@ animations = [{
 "speed": 16.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rqbvx"]
-size = Vector2(9.5, 12)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4m2ij"]
+size = Vector2(8.5, 11.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(0, -16)
 floor_snap_length = 4.0
 script = ExtResource("1_ukqpb")
+movement_data = ExtResource("2_rh8xn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_n45lm")
 animation = &"idle"
 autoplay = "idle"
+frame = 3
+frame_progress = 0.49656
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, 4)
+position = Vector2(0.5, 3.5)
 scale = Vector2(2, 2)
-shape = SubResource("RectangleShape2D_rqbvx")
+shape = SubResource("RectangleShape2D_4m2ij")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+target_position = Vector2(0, -15)
 
 [node name="CoyoteJumpTimer" type="Timer" parent="."]
 wait_time = 0.2
 one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -16)
