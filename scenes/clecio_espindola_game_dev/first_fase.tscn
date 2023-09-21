@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bh6rp2tvqkqaj"]
+[gd_scene load_steps=13 format=3 uid="uid://bh6rp2tvqkqaj"]
 
 [ext_resource type="Shader" path="res://shaders/background_loop.gdshader" id="1_0g7ea"]
 [ext_resource type="Script" path="res://scripts/level/first_fase_controller.gd" id="1_2lo8a"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://3hhq3vhsn1od" path="res://assets/pixel_adventure_1/Background/Gray.png" id="2_6ua0o"]
 [ext_resource type="PackedScene" uid="uid://cncwushy5j8l6" path="res://nodes/player/player_virtual_guy.tscn" id="3_20w7r"]
 [ext_resource type="Texture2D" uid="uid://coswb54uc3orr" path="res://assets/pixel_adventure_1/Background/Blue.png" id="4_awqne"]
+[ext_resource type="PackedScene" uid="uid://b0pkvjx8yixb8" path="res://nodes/blocks/breakable_block.tscn" id="7_xn1on"]
+[ext_resource type="PackedScene" uid="uid://ccl83i3dj8kx6" path="res://nodes/items/pineaple.tscn" id="8_vu2hd"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kgxw7"]
 shader = ExtResource("1_0g7ea")
@@ -546,14 +548,13 @@ script = ExtResource("1_2lo8a")
 [node name="TextureRect" type="TextureRect" parent="."]
 material = SubResource("ShaderMaterial_kgxw7")
 offset_left = -21.0
-offset_right = 795.0
+offset_right = 248.0
 offset_bottom = 262.0
 texture = ExtResource("4_awqne")
 expand_mode = 1
 stretch_mode = 1
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(-15, 0)
 tile_set = SubResource("TileSet_v20b7")
 format = 2
 layer_0/name = "ground"
@@ -566,7 +567,13 @@ layer_1/y_sort_origin = 0
 layer_1/z_index = -1
 layer_1/tile_data = PackedInt32Array()
 
+[node name="blocks" type="Node2D" parent="."]
+
+[node name="breakable_block" parent="blocks" instance=ExtResource("7_xn1on")]
+position = Vector2(216, 104)
+
 [node name="CharacterBody2D2" parent="." instance=ExtResource("3_20w7r")]
 position = Vector2(152, 140)
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+[node name="Area2D" parent="." instance=ExtResource("8_vu2hd")]
+position = Vector2(296, 88)

@@ -62,7 +62,7 @@ func update_animations(input_y_axis):
 func destroy_block():
 	#assert is_instance_of()
 	var block = ray_cast_2d.get_collider()
-	print(block)
-	if block != null and typeof(block) == 123:
-		block.destroy
+	
+	if block != null and block is BreakableBlock:
+		block.hit()
 

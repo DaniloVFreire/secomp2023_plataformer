@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/player/player_controller.gd" id="1_ukqpb"]
 [ext_resource type="Texture2D" uid="uid://gxedki22qfvm" path="res://assets/pixel_adventure_1/Main Characters/Virtual Guy/Idle (32x32).png" id="2_0vjar"]
-[ext_resource type="Resource" uid="uid://cc5tyds6rp3pd" path="res://resorces/player_movement_data.tres" id="2_rh8xn"]
+[ext_resource type="Resource" path="res://resorces/player_movement_data.tres" id="2_rh8xn"]
 [ext_resource type="Texture2D" uid="uid://cvd0a5wajexhu" path="res://assets/pixel_adventure_1/Main Characters/Virtual Guy/Jump (32x32).png" id="3_tno7m"]
 [ext_resource type="Texture2D" uid="uid://bn2e76oibrvyk" path="res://assets/pixel_adventure_1/Main Characters/Virtual Guy/Run (32x32).png" id="4_0v6im"]
 
@@ -193,7 +193,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4m2ij"]
-size = Vector2(8.5, 11.5)
+size = Vector2(7.5, 11.5)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 position = Vector2(0, -16)
@@ -222,3 +222,6 @@ one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -16)
+drag_vertical_enabled = true
+drag_top_margin = 0.4
+drag_bottom_margin = 0.1

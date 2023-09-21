@@ -2,6 +2,10 @@ res://scenes/clecio_espindola_game_dev/first_fase.tscn
 res://scripts/player/player_controller.gd
 res://nodes/player/player_virtual_guy.tscn
 res://scenes/heart_beast/polygon_map.tscn
-res://resorces/breakable_block.tscn
-res://shaders/background_loop.gdshader
-res://scripts/level/first_fase_controller.gd
+res://nodes/blocks/breakable_block.tscn
+res://scripts/blocks/breakable_block.gd
+res://scripts/blocks/breakable_block_effect.gd
+res://nodes/blocks/breakable_block_effect.tscn
+res://scripts/items/pineaple.gd
+res://nodes/items/static_body_2d.tscn
+res://nodes/items/pineaple.tscn

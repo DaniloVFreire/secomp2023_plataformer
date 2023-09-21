@@ -1,8 +1,8 @@
-res://scripts/level
-res://shaders
-res://assets/pixel_adventure_1/Background
-res://resorces/
-res://assets/pixel_adventure_1/Traps/Blocks
+res://nodes/items
+res://assets/pixel_adventure_1/Items/Fruits
+res://scripts/items
+res://nodes/blocks
+res://scripts/blocks
 res://assets/pixel_adventure_1/Main Characters/Virtual Guy
 res://nodes
 res://scenes/heart_beast
