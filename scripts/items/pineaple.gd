@@ -2,7 +2,6 @@ extends Area2D
 
 
 func collected():
-	print('coletado')
 	queue_free()
 
 

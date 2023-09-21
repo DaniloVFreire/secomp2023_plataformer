@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://b35gi3bd3hgxn"]
 
-[ext_resource type="Texture2D" uid="uid://d32g6hojvjb83" path="res://assets/pixel_adventure_1/Traps/Blocks/Idle.png" id="1_6i3ml"]
-[ext_resource type="Texture2D" uid="uid://4uveoha5q0om" path="res://assets/pixel_adventure_1/Traps/Blocks/HitTop (22x22).png" id="2_1mtq2"]
+[ext_resource type="Texture2D" uid="uid://d32g6hojvjb83" path="res://assets/Blocks/Idle.png" id="1_6i3ml"]
+[ext_resource type="Texture2D" uid="uid://4uveoha5q0om" path="res://assets/Blocks/HitTop (22x22).png" id="2_1mtq2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_rcbtc"]
 

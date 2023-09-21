@@ -60,9 +60,7 @@ func update_animations(input_y_axis):
 	animated_sprite_2d.play(animation_name)
 
 func destroy_block():
-	#assert is_instance_of()
 	var block = ray_cast_2d.get_collider()
-	
 	if block != null and block is BreakableBlock:
 		block.hit()
 

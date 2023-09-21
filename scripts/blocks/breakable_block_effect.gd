@@ -7,7 +7,7 @@ var selected_half : String
 var vector : Vector2
 
 func _ready():
-	$Sprite2D.texture = 
+	$Sprite2D.texture = ''
 
 func _physics_process(delta):
 	pass
