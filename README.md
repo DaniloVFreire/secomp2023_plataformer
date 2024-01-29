@@ -1,12 +1,13 @@
 # secomp2023_plataformer
 
-A plataformer demo project to 2023SECOMP game dev basics course, The Computing Week(SECOMP) of Federal University of Alagoas(UFAL).
+A plataformer demo project to 2023SECOMP game dev basics course, for the Computing Week(SECOMP) of Federal University of Alagoas(UFAL).
 
-Topics taught:
+Topics taught by me:
 
 - Characters and Inputs
 - Componentization
 - Map Creation with Tilemap
+- Basic shaders
 - Coyote Jump and Game Feel
 
 ## Demo gameplay
