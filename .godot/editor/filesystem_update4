@@ -1,5 +1,4 @@
-res://scenes/polygon_map.tscn
+res://scenes/first_fase.tscn
 res://scripts/player/player_controller.gd
 res://shaders/background_loop.gdshader
-res://scenes/first_fase.tscn
 res://prefabs/blocks/breakable_block.tscn
