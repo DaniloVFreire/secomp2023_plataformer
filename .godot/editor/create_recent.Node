@@ -1,6 +1,6 @@
-AnimatedSprite2D
 CollisionShape2D
 Area2D
+AnimatedSprite2D
 StaticBody2D
 AnimationPlayer
 Sprite2D
@@ -12,8 +12,3 @@ ParallaxBackground
 Camera2D
 RayCast2D
 Skeleton2D
-TileMap
-Timer
-CharacterBody2D
-Polygon2D
-CollisionPolygon2D

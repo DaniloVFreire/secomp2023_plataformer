@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1706563924
+::res://::1706569525
 icon.svg::CompressedTexture2D::7138235111286849541::1695253263::1706563926::1::::<><>::
-README.md::TextFile::-1::1694616323::0::1::::<><>::
+README.md::TextFile::-1::1706565948::0::1::::<><>::
 ::res://assets/::1695341923
 readme.md::TextFile::-1::1695253263::0::1::::<><>::
 ::res://assets/Background/::1695341923
@@ -135,19 +135,19 @@ Water_frames (16 x 32).png::CompressedTexture2D::5735043954303388103::1695253263
 ::res://assets/Terrain/::1695341923
 Terrain (16x16).png::CompressedTexture2D::206671283808780151::1695341923::1695341923::1::::<><>::
 ::res://prefabs/::1695341923
-::res://prefabs/blocks/::1695341923
-breakable_block.tscn::PackedScene::4172752622326909759::1695341923::0::1::::<><>::res://scripts/blocks/breakable_block.gd<>uid://d32g6hojvjb83::::res://assets/Blocks/Idle.png
+::res://prefabs/blocks/::1706569395
+breakable_block.tscn::PackedScene::4172752622326909759::1706569395::0::1::::<><>::res://scripts/blocks/breakable_block.gd<>uid://d32g6hojvjb83::::res://assets/Blocks/Idle.png
 breakable_block_effect.tscn::PackedScene::3325318209021284687::1695341923::0::1::::<><>::res://scripts/blocks/breakable_block_effect.gd<>uid://ch5oe2t43o8vb::::res://assets/Blocks/Part 2 (22x22).png<>uid://bpnsoalwtoj48::::res://assets/Blocks/Part 1 (22x22).png<>uid://d32g6hojvjb83::::res://assets/Blocks/Idle.png
-::res://prefabs/items/::1695341923
-pineaple.tscn::PackedScene::4937981336538522317::1695341923::0::1::::<><>::uid://b4gitdbr4qj33::::res://assets/Fruits/Pineapple.png<>res://scripts/items/pineaple.gd
-::res://prefabs/player/::1695341923
-player_virtual_guy.tscn::PackedScene::5690797537272568833::1695341923::0::1::::<><>::res://scripts/player/player_controller.gd<>uid://gxedki22qfvm::::res://assets/Main Characters/Virtual Guy/Idle (32x32).png<>uid://cc5tyds6rp3pd::::res://resorces/player_movement_data.tres<>uid://cvd0a5wajexhu::::res://assets/Main Characters/Virtual Guy/Jump (32x32).png<>uid://bn2e76oibrvyk::::res://assets/Main Characters/Virtual Guy/Run (32x32).png
+::res://prefabs/items/::1706569395
+pineaple.tscn::PackedScene::4937981336538522317::1706569395::0::1::::<><>::uid://b4gitdbr4qj33::::res://assets/Fruits/Pineapple.png<>res://scripts/items/pineaple.gd
+::res://prefabs/player/::1706569395
+player_virtual_guy.tscn::PackedScene::5690797537272568833::1706569395::0::1::::<><>::res://scripts/player/player_controller.gd<>uid://gxedki22qfvm::::res://assets/Main Characters/Virtual Guy/Idle (32x32).png<>uid://cc5tyds6rp3pd::::res://resorces/player_movement_data.tres<>uid://cvd0a5wajexhu::::res://assets/Main Characters/Virtual Guy/Jump (32x32).png<>uid://bn2e76oibrvyk::::res://assets/Main Characters/Virtual Guy/Run (32x32).png
 ::res://resorces/::1695341923
 breakable_block.tscn::PackedScene::4414019698860254027::1695341923::0::1::::<><>::uid://d32g6hojvjb83::::res://assets/Blocks/Idle.png<>uid://4uveoha5q0om::::res://assets/Blocks/HitTop (22x22).png
 player_movement_data.gd::GDScript::-1::1695253263::0::1::::PlayerMovementData<>Resource<>::
-player_movement_data.tres::Resource/PlayerMovementData::4976347056008708697::1695253263::0::1::::<><>::res://resorces/player_movement_data.gd
-::res://scenes/::1695341923
-first_fase.tscn::PackedScene::2942798723778458745::1695341923::0::1::::<><>::res://scripts/level/first_fase_controller.gd<>res://shaders/background_loop.gdshader<>uid://coswb54uc3orr::::res://assets/Background/Blue.png<>uid://c7d302i3ufrb::::res://assets/Terrain/Terrain (16x16).png<>uid://3hhq3vhsn1od::::res://assets/Background/Gray.png<>uid://b0pkvjx8yixb8::::res://prefabs/blocks/breakable_block.tscn<>uid://cncwushy5j8l6::::res://prefabs/player/player_virtual_guy.tscn<>uid://ccl83i3dj8kx6::::res://prefabs/items/pineaple.tscn
+player_movement_data.tres::Resource/Resource::4976347056008708697::1695253263::0::1::::<><>::res://resorces/player_movement_data.gd
+::res://scenes/::1706569395
+first_fase.tscn::PackedScene::2942798723778458745::1706569395::0::1::::<><>::res://scripts/level/first_fase_controller.gd<>res://shaders/background_loop.gdshader<>uid://coswb54uc3orr::::res://assets/Background/Blue.png<>uid://c7d302i3ufrb::::res://assets/Terrain/Terrain (16x16).png<>uid://3hhq3vhsn1od::::res://assets/Background/Gray.png<>uid://b0pkvjx8yixb8::::res://prefabs/blocks/breakable_block.tscn<>uid://cncwushy5j8l6::::res://prefabs/player/player_virtual_guy.tscn<>uid://ccl83i3dj8kx6::::res://prefabs/items/pineaple.tscn<>res://scripts/level/fall protection area.gd
 polygon_map.tscn::PackedScene::6883542259411417703::1695341923::0::1::::<><>::res://scripts/level/teste_level.gd<>uid://cncwushy5j8l6::::res://prefabs/player/player_virtual_guy.tscn
 ::res://scripts/::1695257580
 ::res://scripts/blocks/::1695341923
@@ -155,10 +155,11 @@ breakable_block.gd::GDScript::-1::1695256770::0::1::::BreakableBlock<>StaticBody
 breakable_block_effect.gd::GDScript::-1::1695341923::0::1::::<>RigidBody2D<>::
 ::res://scripts/items/::1695341923
 pineaple.gd::GDScript::-1::1695341923::0::1::::<>Area2D<>::
-::res://scripts/level/::1695253263
-first_fase_controller.gd::GDScript::-1::1695253263::0::1::::<>Node2D<>::
+::res://scripts/level/::1706569390
+fall protection area.gd::GDScript::-1::1706569390::0::1::::<>Area2D<>::
+first_fase_controller.gd::GDScript::-1::1706567780::0::1::::<>Node2D<>::
 teste_level.gd::GDScript::-1::1695093155::0::1::::<>Node2D<>::
-::res://scripts/player/::1695341923
-player_controller.gd::GDScript::-1::1695341923::0::1::::<>CharacterBody2D<>::
-::res://shaders/::1695253263
-background_loop.gdshader::Shader::-1::1695253263::0::1::::<><>::
+::res://scripts/player/::1706565587
+player_controller.gd::GDScript::-1::1706565587::0::1::::<>CharacterBody2D<>::
+::res://shaders/::1706569519
+background_loop.gdshader::Shader::-1::1706569519::0::1::::<><>::

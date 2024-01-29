@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://bh6rp2tvqkqaj"]
+[gd_scene load_steps=15 format=3 uid="uid://bh6rp2tvqkqaj"]
 
 [ext_resource type="Script" path="res://scripts/level/first_fase_controller.gd" id="1_juicf"]
 [ext_resource type="Shader" path="res://shaders/background_loop.gdshader" id="2_s6ahg"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://b0pkvjx8yixb8" path="res://prefabs/blocks/breakable_block.tscn" id="6_y17f0"]
 [ext_resource type="PackedScene" uid="uid://cncwushy5j8l6" path="res://prefabs/player/player_virtual_guy.tscn" id="7_so1sc"]
 [ext_resource type="PackedScene" uid="uid://ccl83i3dj8kx6" path="res://prefabs/items/pineaple.tscn" id="8_uipcg"]
+[ext_resource type="Script" path="res://scripts/level/fall protection area.gd" id="9_tjq4i"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_kgxw7"]
 shader = ExtResource("2_s6ahg")
@@ -542,17 +543,19 @@ physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_f8yql")
 sources/3 = SubResource("TileSetAtlasSource_4fan7")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rcfdb"]
+size = Vector2(896, 20)
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_juicf")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 material = SubResource("ShaderMaterial_kgxw7")
-offset_left = -152.0
-offset_top = -104.0
-offset_right = 616.0
-offset_bottom = 408.0
+offset_left = -376.0
+offset_top = -296.0
+offset_right = 856.0
+offset_bottom = 632.0
 texture = ExtResource("3_p2fr6")
-expand_mode = 1
 stretch_mode = 1
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -574,3 +577,13 @@ position = Vector2(88, 120)
 
 [node name="Area2D" parent="." instance=ExtResource("8_uipcg")]
 position = Vector2(296, 88)
+
+[node name="Fall protection" type="Area2D" parent="."]
+script = ExtResource("9_tjq4i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Fall protection"]
+position = Vector2(216, 392)
+shape = SubResource("RectangleShape2D_rcfdb")
+
+[connection signal="area_entered" from="Fall protection" to="Fall protection/CollisionShape2D" method="_on_fall_protection_area_entered"]
+[connection signal="body_entered" from="Fall protection" to="Fall protection" method="_on_body_entered"]

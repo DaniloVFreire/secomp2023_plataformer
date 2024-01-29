@@ -2,3 +2,5 @@ res://scenes/first_fase.tscn
 res://scripts/player/player_controller.gd
 res://shaders/background_loop.gdshader
 res://prefabs/blocks/breakable_block.tscn
+res://prefabs/player/player_virtual_guy.tscn
+res://prefabs/items/pineaple.tscn

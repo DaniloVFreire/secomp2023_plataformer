@@ -1,10 +1,5 @@
-res://nodes/items
-res://assets/pixel_adventure_1/Items/Fruits
+res://scripts/level
 res://scripts/items
-res://nodes/blocks
 res://scripts/blocks
-res://assets/pixel_adventure_1/Main Characters/Virtual Guy
-res://nodes
-res://scenes/heart_beast
 res://scripts
 res://scenes
